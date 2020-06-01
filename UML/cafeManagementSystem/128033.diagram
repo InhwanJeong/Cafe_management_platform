@@ -1,0 +1,59 @@
+format 221
+
+classcanvas 128033 class_ref 128033 // Inventory
+  classdiagramsettings show_members_visibility yes show_members_stereotype yes show_members_multiplicity yes member_max_width 0 end
+  xyzwh 557 216 2000 143 105
+end
+classcanvas 128161 class_ref 128161 // Item
+  classdiagramsettings show_members_visibility yes member_max_width 0 end
+  xyzwh 420 5 2000 137 187
+end
+classcanvas 129441 class_ref 128289 // Ingredients
+  classdiagramsettings show_members_full_definition yes show_members_visibility yes member_max_width 0 end
+  xyzwh 114 220 2000 149 101
+end
+classcanvas 131489 class_ref 128417 // Dessert
+  classdiagramsettings show_members_visibility yes member_max_width 0 end
+  xyzwh 287 220 2000 131 103
+end
+classcanvas 131745 class_ref 128545 // Tableware
+  classdiagramsettings show_members_visibility yes member_max_width 0 end
+  xyzwh 347 379 2000 143 101
+end
+classcanvas 132001 class_ref 128673 // Other
+  classdiagramsettings show_members_visibility yes member_max_width 0 end
+  xyzwh 503 379 2000 117 101
+end
+relationcanvas 129569 relation_ref 128673 // <generalisation>
+  from ref 129441 z 2001 to ref 128161
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 130977 relation_ref 129057 // <directional composition>
+  decenter_begin 559
+  from ref 128033 z 2001 to point 635 96
+  line 131105 z 2001 to ref 128161
+  no_role_a no_role_b
+  multiplicity_a_pos 566 105 3000 no_multiplicity_b
+end
+relationcanvas 131233 relation_ref 129185 // <generalisation>
+  from ref 128033 z 2001 to ref 128161
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 131617 relation_ref 129313 // <generalisation>
+  from ref 131489 z 2001 to ref 128161
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 131873 relation_ref 129441 // <generalisation>
+  from ref 131745 z 2001 to ref 128161
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+relationcanvas 132129 relation_ref 129569 // <generalisation>
+  from ref 132001 z 2001 to ref 128161
+  no_role_a no_role_b
+  no_multiplicity_a no_multiplicity_b
+end
+end

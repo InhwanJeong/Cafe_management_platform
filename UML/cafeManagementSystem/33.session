@@ -1,0 +1,17 @@
+window_sizes 1200 861 300 895 719 96
+
+diagrams
+  active  classdiagram_ref 128033 // InventoryManagement Diagram
+    895 719 100 A4 0 0
+end
+show_stereotypes
+selected operation_ref 131745 // updateDB
+open
+  class_ref 128033 // Inventory
+  class_ref 128161 // Item
+  class_ref 128289 // Ingredients
+  class_ref 128417 // Dessert
+  class_ref 128545 // Tableware
+  class_ref 128673 // Other
+end
+end
